@@ -52,4 +52,9 @@ def main_program():
         add_product()
     elif choice == SHOW:
         show_products()
-    # continue ...
+    elif choice == SEARCH:
+        print('1. Exact search')
+        print('2. Partial search')
+        search_choice = int(input('Enter your choice: '))
+        search_product(search_choice == 1)
+    # TODO: add other choices
